@@ -1,12 +1,17 @@
 * {
     font-family: Roboto, Arial, sans-serif;
+    
+}
+body{
     background-color: black;
     color: white;
-
 }
+
 .video-container{
     display: inline-block;
     width: 400px;
+    margin: 0 15px 10px 0;
+    background-color: rgb(255, 0, 0);
 }
 .video-thumbnail {
     width: 100%;
