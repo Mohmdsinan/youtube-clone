@@ -1,24 +1,71 @@
 .header-container{
     display: flex;
+    background-color: black;
     justify-content: space-between;
-    
-    padding: 0 20px;
+    padding: 20px;
+    align-items: center;
 }
 
 .left-side{
-    
+    display: flex;
+    align-items: center;
 }
-.hamburger-button{
+
+.hamburger-button{   
     border-radius: 50%;
-    background-color: rgb(0, 255, 255);
+    padding: 10px;
+    margin-right: 16px;
+    transition: background-color 0.15s;
 }
+
+.hamburger-button:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.hamburger-button:active{
+    background-color: rgb(102, 102, 102);
+}
+
 .hamburger-icon{
-    background-color: rgb(0, 255, 255);
     border-radius: 50%;
     height: 25px;
 }
+a{
+    text-decoration: none;
+}
+
+.youtube{
+    display: flex;
+    align-items: center;
+ 
+}
+.youtube-logo{
+    height: 40px;
+}
+
+.youtube-text{
+    color: White;
+    font-size: 28px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0;
+    padding: 0 ;
+}
 
 .middle-side{
+    display: flex;
+    flex: 1;
+}
+
+.search-box{
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: grey;
+    border-width: 0.5px;
+    padding: 10px;
+    font-size: 20px;
+    flex: 1;
 }
 
 .right-side{
