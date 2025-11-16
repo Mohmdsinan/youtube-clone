@@ -1,0 +1,25 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0 20px;
+}
+
+.left-side{
+    
+}
+.hamburger-button{
+    border-radius: 50%;
+    background-color: rgb(0, 255, 255);
+}
+.hamburger-icon{
+    background-color: rgb(0, 255, 255);
+    border-radius: 50%;
+    height: 25px;
+}
+
+.middle-side{
+}
+
+.right-side{
+}
