@@ -1,9 +1,15 @@
 .header-container{
     display: flex;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.95);
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    position: fixed;
+    inset: 0 auto auto 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
 }
 
 .left-side{
@@ -55,18 +61,110 @@ a{
 .middle-side{
     display: flex;
     flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-box{
-    background-color: transparent;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
     border-style: solid;
-    border-radius: 25px;
-    border-color: grey;
+    border-radius: 25px 0 0 25px;
+    border-color:rgba(255, 255, 255, 0.08);
     border-width: 0.5px;
     padding: 10px;
     font-size: 20px;
     flex: 1;
+    height: 40px;
+    max-width: 500px;
+}
+.search-box:focus {
+    border-color: #1A73E8; /* Google blue */
+    outline: none;         /* remove default browser outline */
+}
+.search-button, .mic-button{
+    background-color: rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+    border: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.search-button{
+    border-radius: 0 25px 25px 0;
+    padding: 10px 35px;
+
+}
+.mic-button{
+    border-radius: 50%;
+    margin-left: 16px;
+    padding: 10px;
+
+
+}
+.search-icon, .mic-icon{
+    height: 26px;
+    padding: 10px;
 }
 
 .right-side{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-right:30px;
+}
+
+.create-button{
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 16px;
+}
+
+.plus-icon{
+    height: 20px;
+}
+
+.create-text{
+    color: white;
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+.bell-button{
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.bell-icon{
+    height: 28px;
+}
+
+.account-icon{
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    padding: 3px;
+}
+
+.account-profile{
+    height: 100%;
+    border-radius: 50%;
 }

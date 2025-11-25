@@ -1,0 +1,25 @@
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 70px auto auto 0;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.sidebar-button{
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.sidebar-icon{
+    height: 25px;
+}
+
+.sidebar-text{
+    color: white;
+    font-size: 12px;
+}
