@@ -15,6 +15,7 @@
 .left-side{
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 
 .hamburger-button{   
@@ -168,3 +169,5 @@ a{
     height: 100%;
     border-radius: 50%;
 }
+
+
