@@ -6,12 +6,33 @@
 .body-container {
     background-color: black;
     color: white;
-    padding: 90px 0 0 130px;
+    padding: 90px 15px 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
 }
 
+@media (max-width: 750px) {
+    .body-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 751px) and (max-width: 999px) {
+    .body-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .body-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
 .video-container{
     display: inline-block;
-    width: 400px;
+    width: 100%;
     margin: 0 15px 20px 0;
     z-index: 0;
 }
@@ -48,7 +69,7 @@
     font-size: 16px;
     font-weight: 500;
     margin: 0px 0px 5px 0px;
-    width: 350px;
+    width: auto;
     display: block;
 }
 .video-author {
@@ -60,7 +81,7 @@
 .video-views {
     font-size: 14px;
     color: rgb(170, 170, 170);
-    width: 350px;
+    width: auto;
     display: block;
     margin: 0px;
 }

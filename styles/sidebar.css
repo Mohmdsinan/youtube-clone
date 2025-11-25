@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    inset: 70px auto auto 0;
+    inset: 80px auto auto 0;
     align-items: center;
     justify-content: center;
     padding-left: 10px;
